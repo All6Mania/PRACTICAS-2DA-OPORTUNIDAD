@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="MisClases">
+  <ClassDiagramComponents>
+    <Class name="Automovil" package="MisClases" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="marca" type="String" visibility="private"/>
+        <Field name="modelo" type="String" visibility="private"/>
+        <Field name="año" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="setMarca" returnType="void" visibility="public">
+          <Argument type="String" name="x"/>
+        </Method>
+        <Method name="setModelo" returnType="void" visibility="public">
+          <Argument type="String" name="x"/>
+        </Method>
+        <Method name="setAño" returnType="void" visibility="public">
+          <Argument type="int" name="x"/>
+        </Method>
+        <Method name="getMarca" returnType="String" visibility="public"/>
+        <Method name="getModelo" returnType="String" visibility="public"/>
+        <Method name="getAño" returnType="int" visibility="public"/>
+        <Method name="ImprimirDatos" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Persona" package="MisClases" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Fields>
+        <Field name="ID" type="String" visibility="private"/>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="edad" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="setID" returnType="void" visibility="public">
+          <Argument type="String" name="x"/>
+        </Method>
+        <Method name="setNombre" returnType="void" visibility="public">
+          <Argument type="String" name="x"/>
+        </Method>
+        <Method name="setNombre" returnType="void" visibility="public">
+          <Argument type="int" name="x"/>
+        </Method>
+        <Method name="getID" returnType="String" visibility="public"/>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="getEdad" returnType="int" visibility="public"/>
+        <Method name="ImprimirDatos" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Television" package="MisClases" visibility="public" xPosition="620.0" yPosition="20.0">
+      <Fields>
+        <Field name="canal" type="int" visibility="private"/>
+        <Field name="volumen" type="int" visibility="private"/>
+        <Field name="power" type="boolean" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="setCanal" returnType="void" visibility="public">
+          <Argument type="int" name="x"/>
+        </Method>
+        <Method name="setVolumen" returnType="void" visibility="public">
+          <Argument type="int" name="x"/>
+        </Method>
+        <Method name="setPower" returnType="void" visibility="public">
+          <Argument type="boolean" name="x"/>
+        </Method>
+        <Method name="getCanal" returnType="int" visibility="public"/>
+        <Method name="getVolumen" returnType="int" visibility="public"/>
+        <Method name="getPower" returnType="boolean" visibility="public"/>
+        <Method name="ImprimirDatos" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>
