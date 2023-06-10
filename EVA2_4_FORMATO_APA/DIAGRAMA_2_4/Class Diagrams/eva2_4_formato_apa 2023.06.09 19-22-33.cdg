@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="eva2_4_formato_apa">
+  <ClassDiagramComponents>
+    <Class name="Documento" package="eva2_4_formato_apa" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="director" type="String" visibility="private"/>
+        <Field name="titulo" type="String" visibility="private"/>
+        <Field name="año" type="int" visibility="private"/>
+        <Field name="mes" type="String" visibility="private"/>
+        <Field name="dia" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="director"/>
+          <Argument type="String" name="titulo"/>
+          <Argument type="int" name="año"/>
+          <Argument type="String" name="mes"/>
+          <Argument type="int" name="dia"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getDirector" returnType="String" visibility="public"/>
+        <Method name="getTitulo" returnType="String" visibility="public"/>
+        <Method name="getAño" returnType="int" visibility="public"/>
+        <Method name="getMes" returnType="String" visibility="public"/>
+        <Method name="getDia" returnType="int" visibility="public"/>
+        <Method name="setDirector" returnType="void" visibility="public">
+          <Argument type="String" name="director"/>
+        </Method>
+        <Method name="setTitulo" returnType="void" visibility="public">
+          <Argument type="String" name="titulo"/>
+        </Method>
+        <Method name="setAño" returnType="void" visibility="public">
+          <Argument type="int" name="año"/>
+        </Method>
+        <Method name="setMes" returnType="void" visibility="public">
+          <Argument type="String" name="mes"/>
+        </Method>
+        <Method name="setDia" returnType="void" visibility="public">
+          <Argument type="int" name="dia"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="EVA2_4_FORMATO_APA" package="eva2_4_formato_apa" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Pelicula" package="eva2_4_formato_apa" visibility="public" xPosition="620.0" yPosition="20.0">
+      <Fields>
+        <Field name="productora" type="String" visibility="private"/>
+        <Field name="distribuidora" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="productora"/>
+          <Argument type="String" name="distribuidora"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getProductora" returnType="String" visibility="public"/>
+        <Method name="getDistribuidora" returnType="String" visibility="public"/>
+        <Method name="setProductora" returnType="void" visibility="public">
+          <Argument type="String" name="productora"/>
+        </Method>
+        <Method name="setDistribuidora" returnType="void" visibility="public">
+          <Argument type="String" name="distribuidora"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="eva2_4_formato_apa.Pelicula" target="eva2_4_formato_apa.Documento"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
